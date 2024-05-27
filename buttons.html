@@ -12,7 +12,7 @@
         <h2 class = "logo"> library </h2>
         <div class="search-bar">
             <div class="btn-search"></div>
-                <input type="text" class="input-search" placeholder="Search Books...">
+                <input type="text" class="input-search" onfocus="this.placeholder = 'Search Books...'" onblur="this.placeholder = ''" onmouseover="this.placeholder = 'Search Books...'" onmouseout="this.placeholder = ''">
             
         </div>
     </header>
@@ -21,8 +21,23 @@
     </video>
     <main>
         <div>
-            <button class="button" id="myBtn" onclick="myFunction()">NewBook</button>
+            <button class="button" id="myBtn">NewBook</button>
+            
+                <form id="" style="display: none;">
+                    <label for="title">Title</label>
+                    <input type="text" id="title">
+                    <label for="author">Author</label>
+                    <input type="text" id="author">
+                    <label for="book">BookName</label>
+                    <input type="text" class="book">
+                    <label for="pages">Num of Pages read</label>
+                    <input type="number" id="pages">
+                    <label for="read">Read:</label>
+                    <input type="checkbox" id="read">
+                    <input type="submit" value="Add Book">
+                </form>
         </div>
+        
     </main>
     
     <script src = "index.js"></script>
