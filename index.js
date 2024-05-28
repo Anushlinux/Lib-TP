@@ -1,29 +1,37 @@
-const askName = prompt("Whats your name?");
+// const askName = prompt("Whats your name?");
 
-var video = document.getElementById("bdVid");
+// var video = document.getElementById("bdVid");
 
-var btn = document.getElementById("myBtn");
+// var btn = document.getElementById("myBtn");
 
-// function myFunction() {
-//   if (video.paused) {
-//     video.play();
-//     btn.innerHTML = "NewBook";
-//   } else {
-//     video.pause();
-//     btn.innerHTML = "NewBook";
-//   }
+// // function myFunction() {
+// //   if (video.paused) {
+// //     video.play();
+// //     btn.innerHTML = "NewBook";
+// //   } else {
+// //     video.pause();
+// //     btn.innerHTML = "NewBook";
+// //   }
+// // }
+
+// const myLibrary = [];
+
+// function Book() {
+//   this.name = "";
+//   this.author = "";
+//   this.pages = "";
+//   this.read = "";
 // }
 
-const myLibrary = [];
+// function addBookToLibrary() {
 
-function Book() {
-  this.name = "";
-  this.author = "";
-  this.pages = "";
-  this.read = "";
+// }
+
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
 }
 
-function addBookToLibrary() {
-
+function closeFrom() {
+  document.getElementById("myForm").style.display = "none";
 }
-
