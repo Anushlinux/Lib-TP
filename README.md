@@ -1,1 +1,1 @@
-# LOL
+# Basic assignment on Js
