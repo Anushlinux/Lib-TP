@@ -27,11 +27,27 @@
 
 // }
 
+// let modal = document.getElementById("myForm");
 
-function openForm() {
+// let btn = document.getElementById("myBtn");
+
+// let span = document.getElementsByClassName("close")[0];
+
+function showForm() {
   document.getElementById("myForm").style.display = "block";
 }
 
-function closeFrom() {
-  document.getElementById("myForm").style.display = "none";
-}
+// function addBook() {
+//   // Add code to handle form submission here
+//   modal.style.display = "none"; // Close the form after submission
+// }
+
+// span.onclick = function () {
+//   modal.style.display = "none";
+// }
+
+// window.onclick = function (event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }

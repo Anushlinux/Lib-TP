@@ -12,17 +12,17 @@
         <h2 class = "logo"> library </h2>
         <div class="search-bar">
             <div class="btn-search"></div>
-                <input type="text" class="input-search" onfocus="this.placeholder = 'Search Books...'" onblur="this.placeholder = ''" onmouseover="this.placeholder = 'Search Books...'" onmouseout="this.placeholder = ''">
-            
+                <input type="text" class="input-search" onfocus="this.placeholder = 'Search Books...'" onblur="this.placeholder = ''" onmouseover="this.placeholder = 'Search Books...'" onmouseout="this.placeholder = ''">   
         </div>
     </header>
     <video autoplay loop id="bdVid">
         <source src="bg.mp4" type="video/mp4">
     </video>
     <main>
-        <button class="button" id="myBtn" onclick="openForm()">NewBook</button>
+        <button class="button" id="myBtn" onclick="showForm()">NewBook</button>
                 <div class="form-popup" id="myForm">    
                     <form class="form-container" style="display: none;">
+                        <span class="close">&times;</span>
                         <label for="title">Title</label>
                         <input type="text" id="title">
                         <label for="author">Author</label>
@@ -36,8 +36,7 @@
                         <button type="submit" id="btn" onclick="closeFrom()">Add Book</button>
                     </form>
                 </div>    
-        
-    </main>sdf
+    </main>
     
     <script src = "index.js"></script>
 </body>
