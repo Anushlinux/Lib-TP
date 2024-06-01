@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/anush/Documents/codeforces",
-      "program": "c:/Users/anush/Documents/codeforces/build/Debug/outDebug",
+      "cwd": "c:/Users/anush/Documents/Fuck-JS/src",
+      "program": "c:/Users/anush/Documents/Fuck-JS/src/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

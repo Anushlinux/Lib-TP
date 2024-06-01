@@ -1,4 +1,4 @@
-const askName = prompt("Whats your name?");
+// const askName = prompt("Whats your name?");
 
 // var video = document.getElementById("bdVid");
 
@@ -40,7 +40,8 @@ const askName = prompt("Whats your name?");
 
 let myLibrary = [];
 
-function Book(title, author, book, pages, read) {
+function Book(title, author, book, pages, read) 
+{
   this.title = title;
   this.author = author;
   this.book = book;
@@ -48,34 +49,38 @@ function Book(title, author, book, pages, read) {
   this.read = read;
 }
 
-function addBookToLibrary() {
+function render(){
+  let libraryBook = document.querySelector("#library");
+
+  
+}
+
+function addBookToLibrary() 
+{
   let title = document.querySelector("#title").value;
   let author = document.querySelector("#author").value;
   let book = document.querySelector("#book").value;
   let pages = document.querySelector("#pages").value;
   let read = document.querySelector("#read").checked;
   let newBook = new Book(title, author, book, pages, read);
-  console.log(newBook);
+  myLibrary.push(newBook);
+  render();
 }  
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() 
+{
   let newBookbtn = document.querySelector("#new-book-btn");
 
-  newBookbtn.addEventListener("click", function () {
-    let modal = document.querySelector(".new-book-form");
-    if (modal) {
-      modal.style.display = "block";
-    }
+  newBookbtn.addEventListener("click", function () 
+  {
+    let newBookForm = document.querySelector("#new-book-form");
+    newBookForm.style.display = "block";
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  let closeBtn = document.querySelector(".close");
 
-  closeBtn.addEventListener("click", function () {
-    let modal = document.querySelector(".new-book-form");
-    if (modal) {
-      modal.style.display = "none";
-    }
-  });
+document.querySelector ("#new-book-form").addEventListener("submit", function (event) 
+{
+  event.preventDefault();
+  addBookToLibrary();
 });

@@ -200,7 +200,23 @@ button {
     height: 6%;
     border-radius: 10px;
     border: none;
-    outline: color(srgb red green blue);
+    background-color: #d9d9d9;
+}
+
+.new-book-form input:hover {
+    background-color: #232323;
+    color: #858585;
+    cursor: pointer;
+    filter:opacity(0.8);
+    transition: 0.5s;
+}
+
+.new-book-form input:focus {
+    background-color: #222222;
+    color: #ffffff;
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px #d6d6d684);
+    transition: 0.5s;
 }
 
 .new-book-form label {
