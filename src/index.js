@@ -51,7 +51,14 @@ function Book(title, author, book, pages, read)
 
 function render(){
   let libraryBook = document.querySelector("#library");
-
+  libraryBook.innerHTML = "";
+  for (let i = 0; i < myLibrary.length; i++)
+  {
+    let book = myLibrary[i];
+    let bookEl = document.createElement("div");
+    bookEl.innerHTML = `<p>${book.title}</p>`
+    libraryBook.appendChild(bookEl);
+  }
   
 }
 
